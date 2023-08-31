@@ -1,4 +1,4 @@
-const Additional = require("../../models/lore");
+const Additional = require("../../models/additional");
 
 const getAdditionalArticles = async (req, res, next) => {
   try {

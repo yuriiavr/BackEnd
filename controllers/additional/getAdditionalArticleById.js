@@ -1,4 +1,4 @@
-const additional = require("../../service/lore");
+const additional = require("../../service/additional");
 
 const getAdditionalArticleById = async(req, res) =>{
     try{
