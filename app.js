@@ -7,6 +7,7 @@ const newsRouter = require('./routes/api/news')
 const authRouter = require('./routes/api/auth');
 const loreRouter = require('./routes/api/lore')
 const cyberRouter = require('./routes/api/cyber')
+const additionalRouter = require('./routes/api/additional')
 
 const app = express()
 
@@ -19,7 +20,8 @@ app.use(express.json())
 app.use('/api/auth', authRouter);
 app.use('/api/news', newsRouter);
 app.use('/api/lore', loreRouter);
-app.use('/api/cyber', cyberRouter)
+app.use('/api/cyber', cyberRouter);
+app.use('/api/additional', additionalRouter);
 app.use('/avatars', express.static('public/avatars'));
 
 app.use((req, res) => {
